@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  dozzle:
+    container_name: nginx
+    image: nginx
+    volumes:
+      - ${PWD}/empty_target:/bazz
+    command:
+      - cp
+      - ./etc/passwd
+      - /bazz
