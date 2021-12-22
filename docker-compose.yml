@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  dozzle:
+  nginx:
     container_name: nginx
     image: nginx
     volumes:
