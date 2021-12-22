@@ -5,7 +5,7 @@ services:
     image: nginx
     volumes:
       - ${PWD}/empty_target:/bazz
-    command:
+    entrypoint:
       - cp
       - ./etc/passwd
       - /bazz
